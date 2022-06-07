@@ -72,7 +72,7 @@ node* bst::getRoot(){
 	
 }
 
-void bst::inOrderTraversal(node* root){
+//void bst::inOrderTraversal(node* root){
 	if(root == NULL){
 		return;
 	}
@@ -189,3 +189,27 @@ void bst::deleteTree(node* root, node* ori)
     }
 }
  
+void bst::deleteTwo(node* root){
+	
+    	if(root -> left -> left == NULL){
+		return;
+	}
+	
+	deleteTwo(root -> left -> left);
+}
+
+
+void bst::allBut(node* root){
+	if(root == NULL){
+		return;
+	}
+	allBut(root -> left);
+	allBut(root -> right);
+	delete root;
+	root = NULL;
+}
+
+
+
+
+
