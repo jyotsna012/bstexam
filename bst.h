@@ -24,6 +24,7 @@ class bst
 	bool search(node* root, int val);
 	void add_new(node* &root, node* current, node* parent, int number);
 	void findMinAdd(node* root);
+	void removeSmallest(node* root);
 
 
 /* ************** PLACE YOUR PROTOTYPE HERE ***************** */
