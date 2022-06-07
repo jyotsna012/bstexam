@@ -72,7 +72,7 @@ node* bst::getRoot(){
 	
 }
 
-//void bst::inOrderTraversal(node* root){
+void bst::inOrderTraversal(node* root){
 	if(root == NULL){
 		return;
 	}
