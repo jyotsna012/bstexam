@@ -196,6 +196,7 @@ void bst::allBut(node* root){
 	}
 	allBut(root -> left);
 	allBut(root -> right);
+	cout << "Deleting node: " << root->data << endl;
 	delete root;
 	root = NULL;
 }
