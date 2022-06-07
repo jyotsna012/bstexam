@@ -7,8 +7,8 @@ int main()
     object.display();	//displays a BST
         
     node* root = object.getRoot();
+    object.add_new(root, root, root, 15);
     //object.inOrderTraversal(root);
-    root = object.insert(root, 19);
     //bool result = object.search(root, 12);
 
 
