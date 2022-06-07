@@ -85,7 +85,7 @@ void bst::inOrderTraversal(node* root){
 
 }
 
-void bst::insert(node* root, int val){
+node* bst::insert(node* root, int val){
 	if(root == NULL){
 		node* newNode = new node();
 		newNode -> data = val;
@@ -102,7 +102,7 @@ void bst::insert(node* root, int val){
 	return root;
 }
 
-bool bst::search(node* root, val){
+bool bst::search(node* root, int val){
 	if(root == NULL){
 		return false;
 	}
