@@ -19,7 +19,7 @@ class bst
     	bst();			//supplied
         void build(); 		//supplied
         void display(); 	//supplied
-	void getRoot();
+	node* getRoot();
 	void inOrderTraversal(node* root);
 
 
