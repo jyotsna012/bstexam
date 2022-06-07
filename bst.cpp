@@ -154,3 +154,13 @@ void bst::findMinAdd(node* root){
 	}
 }
 
+void bst::removeSmallest(node* root){
+	if(root -> left -> left == NULL){
+		int number = root -> left -> data;
+		root -> left = NULL;
+		return;
+	}
+	else{
+		removeSmallest(root -> left -> left);
+	}
+}
