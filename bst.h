@@ -22,7 +22,7 @@ class bst
 	node* getRoot();
 	void inOrderTraversal(node* root);
 	bool search(node* root, int val);
-	node* insert(node* root, int val);
+	void bst::add_new(node* &root, node* current, node* parent, int number)
 
 
 /* ************** PLACE YOUR PROTOTYPE HERE ***************** */
