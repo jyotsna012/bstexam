@@ -166,9 +166,6 @@ void bst::removeSmallest(node* root){
 }
 
 void bst::removeAll(node* root, int val){
-	if(root -> data == val){
-		return;
-	}
 	if(root == NULL){
 		return;
 	}
@@ -176,6 +173,6 @@ void bst::removeAll(node* root, int val){
 	removeAll(root -> left, val);
 	removeAll(root -> right, val);
 	cout << root -> data << endl;
-	root = NULL;
-	free(root);
+	//root = NULL;
+	//free(root);
 }
