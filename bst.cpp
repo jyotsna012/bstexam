@@ -174,8 +174,8 @@ void bst::deleteTree(node* root, node* ori)
     deleteTree(root->right, ori);
 	
     if(root == ori){
-    	return;
-	    cout << "ori data: " << root -> data << endl;
+	cout << "ori data: " << root -> data << endl;
+    	//return;
     }else{
      
     /* then delete the node */
