@@ -66,6 +66,12 @@ void bst::display() {
   cout << "--------------------------------" << endl;
 }
 
+void bst::getRoot(){
+
+	return root;
+	
+}
+
 void bst::inOrderTraversal(node* root){
 	if(root == NULL){
 		return;
