@@ -105,9 +105,11 @@ node* bst::insert(node* root, int val){
 bool bst::search(node* root, int val){
 	if(root == NULL){
 		return false;
+		cout << "false" << endl;
 	}
 	else if(root -> data == val){
 		return true;
+		cout << "true" << endl;
 	}
 	else if(val > root -> data){
 		root = root -> right;
