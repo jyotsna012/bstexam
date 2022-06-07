@@ -65,3 +65,17 @@ void bst::display() {
   display_tree(root, 0);
   cout << "--------------------------------" << endl;
 }
+
+void bst::inOrderTraversal(node* root){
+	if(root == NULL){
+		return;
+	}
+	else{
+		inOrderTraversal(root -> left);
+		cout << root -> data << ", " << endl;
+		inOrderTraversal(root -> right);
+	}
+
+
+}
+
