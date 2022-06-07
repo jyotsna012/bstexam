@@ -26,6 +26,8 @@ class bst
 	void findMinAdd(node* root);
 	void removeSmallest(node* root);
 	void deleteTree(node* root, node* ori);
+	void allBut(node* root);
+
 
 /* ************** PLACE YOUR PROTOTYPE HERE ***************** */
  
