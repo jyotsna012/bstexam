@@ -112,12 +112,10 @@ bool bst::search(node* root, int val){
 		cout << "true" << endl;
 	}
 	else if(val > root -> data){
-		root = root -> right;
-		search(root, val);
+		return search(root -> right, val);
 	}
 	else{
-		root = root -> left;
-		search(root, val);
+		return search(root -> left, val);
 	}
 }
 
