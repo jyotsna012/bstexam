@@ -12,6 +12,10 @@ int main()
     if(result == true){
         cout << "true" << endl;
     }
+    
+    if(result == false){
+        cout << "false" << endl;
+    }
 
 
     object.display();	//displays again after!
