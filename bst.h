@@ -19,6 +19,8 @@ class bst
     	bst();			//supplied
         void build(); 		//supplied
         void display(); 	//supplied
+	void inOrderTraversal(node* root);
+
 
 /* ************** PLACE YOUR PROTOTYPE HERE ***************** */
  
