@@ -25,7 +25,7 @@ class bst
 	void add_new(node* &root, node* current, node* parent, int number);
 	void findMinAdd(node* root);
 	void removeSmallest(node* root);
-	void deleteTree(node* node);
+	void deleteTree(node* root);
 
 /* ************** PLACE YOUR PROTOTYPE HERE ***************** */
  
