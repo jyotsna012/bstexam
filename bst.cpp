@@ -176,6 +176,6 @@ void bst::removeAll(node* root, int val){
 	removeAll(root -> left, val);
 	removeAll(root -> right, val);
 	cout << root -> data << endl;
+	root = NULL;
 	free(root);
-	//root = NULL;
 }
