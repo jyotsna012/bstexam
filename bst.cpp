@@ -92,6 +92,8 @@ void bst::add_new(node* &root, node* current, node* parent, int number)
       node* newNode = new node();
       newNode->data = number;
       current = newNode;
+      current->left = NULL;
+      current->right = NULL;
       if (number >= parent->data)
 	{
 	  parent->right = current;
@@ -100,8 +102,7 @@ void bst::add_new(node* &root, node* current, node* parent, int number)
 	{
 	  parent->left = current;
 	}
-      current->left = NULL;
-      current->right = NULL;
+
     }
   else
     {
