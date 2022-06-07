@@ -167,6 +167,7 @@ void bst::removeSmallest(node* root){
 
 void bst::deleteTree(node* root, node* ori)
 {
+    bool hi = true;
     if (root == NULL ) return;
  
     /* first delete both subtrees */
@@ -176,12 +177,13 @@ void bst::deleteTree(node* root, node* ori)
     if(root == ori){
 	cout << "ori data: " << root -> data << endl;
     	int val = ori -> data;
-	break;
+	hi = false;
     }
      
-    /* then delete the node */
+    if(hi == true){/* then delete the node */
     cout << "Deleting node: " << root->data << endl;
     delete root;
     root = NULL; 
+    }
 }
  
