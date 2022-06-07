@@ -181,6 +181,7 @@ void bst::deleteTree(node* root, node* ori)
     /* then delete the node */
     cout << "\n Deleting node: " << root->data;
     delete root;
+    root = NULL; 
     }
 	    
 }
