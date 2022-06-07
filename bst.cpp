@@ -66,7 +66,7 @@ void bst::display() {
   cout << "--------------------------------" << endl;
 }
 
-void bst::getRoot(){
+node* bst::getRoot(){
 
 	return root;
 	
