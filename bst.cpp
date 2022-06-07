@@ -165,7 +165,7 @@ void bst::removeSmallest(node* root){
 	}
 }
 
-void deleteTree(node* node)
+void bst::deleteTree(node* root)
 {
     if (node == NULL) return;
  
