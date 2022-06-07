@@ -165,14 +165,15 @@ void bst::removeSmallest(node* root){
 	}
 }
 
-void bst::removeAll(node* root, int val){
-	if(root == NULL){
-		return;
-	}
-	
-	removeAll(root -> left, val);
-	removeAll(root -> right, val);
-	cout << root -> data << endl;
-	root = NULL;
-	//free(root);
+void deleteTree(node* node)
+{
+    if (node == NULL) return;
+ 
+    /* first delete both subtrees */
+    deleteTree(node->left);
+    deleteTree(node->right);
+     
+    /* then delete the node */
+    cout << "\n Deleting node: " << node->data;
 }
+ 
