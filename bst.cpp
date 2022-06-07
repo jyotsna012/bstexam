@@ -140,6 +140,12 @@ void bst::findMinAdd(node* root){
 	if(root -> left == NULL){
 		int number = root -> data;
 		cout << number << endl;
+		
+		node* newNode = new node();
+		newNode -> data = number-1;
+		newNode -> left = newNode -> right = NULL;
+		
+		root -> left = newNode;
 		return;
 	}
 	else{
