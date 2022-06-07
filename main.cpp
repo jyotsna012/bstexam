@@ -8,7 +8,7 @@ int main()
         
     node* root = object.getRoot();
     //object.inOrderTraversal(root);
-    object.insert(root, 19);
+    root = object.insert(root, 19);
     //bool result = object.search(root, 12);
 
 
