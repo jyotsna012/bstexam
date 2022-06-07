@@ -136,3 +136,15 @@ bool bst::search(node* root, int val){
 	}
 }
 
+void bst::findMinAdd(node* root){
+	if(root -> left == NULL){
+		int number = root -> data;
+		cout << number << endl;
+		return;
+	}
+	else{
+		findMinAdd(root -> left);
+		return;
+	}
+}
+
