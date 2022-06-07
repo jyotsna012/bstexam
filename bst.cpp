@@ -189,15 +189,6 @@ void bst::deleteTree(node* root, node* ori)
     }
 }
  
-void bst::deleteTwo(node* root){
-	
-    	if(root -> left -> left == NULL){
-		return;
-	}
-	
-	deleteTwo(root -> left -> left);
-}
-
 
 void bst::allBut(node* root){
 	if(root == NULL){
