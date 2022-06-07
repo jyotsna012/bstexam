@@ -8,14 +8,9 @@ int main()
         
     node* root = object.getRoot();
     object.inOrderTraversal(root);
-    bool result = object.search(root, 12);
-    if(result == true){
-        cout << "true" << endl;
-    }
-    
-    if(result == false){
-        cout << "false" << endl;
-    }
+    object.insert(root, 19);
+    //bool result = object.search(root, 12);
+
 
 
     object.display();	//displays again after!
