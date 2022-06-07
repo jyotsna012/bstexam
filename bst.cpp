@@ -165,7 +165,10 @@ void bst::removeSmallest(node* root){
 	}
 }
 
-void bst::removeAll(node* root){
+void bst::removeAll(node* root, val){
+	if(root -> data == val){
+		return;
+	}
 	if(root == NULL){
 		return;
 	}
