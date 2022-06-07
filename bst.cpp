@@ -111,11 +111,11 @@ bool bst::search(node* root, int val){
 	}
 	else if(val > root -> data){
 		root = root -> right;
-		search(root, data);
+		search(root, val);
 	}
 	else{
 		root = root -> left;
-		search(root, data);
+		search(root, val);
 	}
 }
 
