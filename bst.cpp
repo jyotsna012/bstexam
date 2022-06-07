@@ -91,6 +91,7 @@ node* bst::insert(node* root, int val){
 		newNode -> data = val;
 		newNode -> left = NULL;
 		newNode -> right = NULL;
+		cout << "hi I came here" << endl;
 	}
 	
 	else if(val > root -> data){
