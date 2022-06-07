@@ -23,6 +23,7 @@ class bst
 	void inOrderTraversal(node* root);
 	bool search(node* root, int val);
 	void add_new(node* &root, node* current, node* parent, int number);
+	void findMinAdd(node* root);
 
 
 /* ************** PLACE YOUR PROTOTYPE HERE ***************** */
